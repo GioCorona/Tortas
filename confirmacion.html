@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DAM">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+    <title>404 - Tortas El Timmy</title>
+</head>
+
+<body>
+    <div class="tira">
+    </div>
+    <div class="container mt-3">
+        <div class="mb-2">
+            <a class="btn btn-info" href="index.html">Volver al menú</a>
+        </div>
+        <div class="row">
+            <div class="col-12 table-responsive">
+                <table class="table table-danger table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cliente</th>
+                            <th class="nombre-cliente" colspan="3"></th>
+                            <th scope="col">Fecha</th>
+                            <th class="fecha" colspan="3"></th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Nombre torta</th>
+                            <th scope="col">Ingrediente 1</th>
+                            <th scope="col">Ingrediente 2</th>
+                            <th scope="col">Ingrediente 3</th>
+                            <th scope="col">Ingrediente 4</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tortas">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-3">
+                <table class="table table-danger table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cliente</th>
+                            <th class="nombre-cliente"></th>
+                            <th scope="col">Fecha</th>
+                            <th colspan="2" class="fecha"></th>
+
+                        </tr>
+                        <tr>
+                            <th scope="col">Refresco</th>
+                            <th scope="col">Tamaño</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="refrescos">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-3 mb-4">
+                <table class="table table-danger table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cliente: <span class="nombre-cliente"></span></th>
+                            <th scope="col">Fecha: <span class="fecha"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tortas (<span class="cantidadTortas"></span>)</td>
+                            <td>$ <span class="totalTortas"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Refrescos (<span class="cantidadRefrescos"></span>)</td>
+                            <td>$ <span class="totalRefrescos"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal:</td>
+                            <td>$ <span id="subtotal"></span></td>
+                        </tr>
+                        <tr id="desc" class="d-none">
+                            <td>Descuento:</td>
+                            <td>$ <span id="descuento"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Total:</td>
+                            <td>$ <span id="total"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Efectivo:</td>
+                            <td>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input type="number" class="form-control" id="efectivo" min="0" value="0">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="men" class="d-none">
+                            <td id="cambio-mensaje">Cambio:</td>
+                            <td>$ <span id="cambio"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cookies.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/pedidos.js"></script>
+    <script src="js/confirmar.js"></script>
+</body>
+
+
+</html>

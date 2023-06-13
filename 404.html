@@ -1,0 +1,77 @@
+<style>
+    body{
+    background:#ffccc6;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 45%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.tira{
+	display: block;
+	height: 60px;
+	background-color: #ffe7e4;
+	background-image: linear-gradient(
+		to right,
+		#ca6d60,
+		#ca6d60 80px,
+		#ffe7e4 40px,
+		#ffe7e4
+	);
+	background-size: 150px 100%;
+}
+h1{
+    color: #ffccc6;
+    font-size: 20px;
+    padding: 20px;
+}
+a{
+    padding: 13px 30px;
+    border-radius: 15px;
+    border: none;
+    background: #f8958a;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:630px){
+    h1{        
+        font-size: 16px;        
+    }
+}
+</style>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="tira">
+    </div>
+    <div class="container">
+        <img src="images/error404.png" alt="">
+        <h1>La página que ha solicitado no se encuentra disponible</h1>
+        <div class="text-center mt-4">
+            <a href="index.html" btn btn-secondary btn-lg btn-danger btn-block mb-4>Ir al inicio</a>
+        </div>
+    </div>
+</body>
+
+</html>
