@@ -15,30 +15,30 @@ function LimpiarCache(cacheName, numeroItems) {
 self.addEventListener("install", (e) => {
 	const cacheProm = caches.open(CacheEstatico).then((cache) => {
 		cache.addAll([
-			"/Tortas-El-Timmy/",
-            "/Tortas-El-Timmy/index.html",
-            "/Tortas-El-Timmy/confirmacion.html",
-            "/Tortas-El-Timmy/pedidos.html",
-            "/Tortas-El-Timmy/css/style.css",
-            "/Tortas-El-Timmy/css/tortas.css",
-            "/Tortas-El-Timmy/js/app.js",
-            "/Tortas-El-Timmy/js/confirmar.js",
-            "/Tortas-El-Timmy/js/pedidos.js",
+			"/Tortas/",
+            "/Tortas/index.html",
+            "/Tortas/confirmacion.html",
+            "/Tortas/pedidos.html",
+            "/Tortas/css/style.css",
+            "/Tortas/css/tortas.css",
+            "/Tortas/js/app.js",
+            "/Tortas/js/confirmar.js",
+            "/Tortas/js/pedidos.js",
 		]);
 	});
 	//cache inmutable no se modifica
 	const cacheInm = caches.open(CacheInmutable).then((cache) => {
 		cache.addAll([
 			"/Tortas-El-Timmy/manifest.json",
-            "/Tortas-El-Timmy/css/bootstrap.min.css",
-            "/Tortas-El-Timmy/css/fontawesome.min.css",
-            "/Tortas-El-Timmy/js/bootstrap.bundle.min.js",
-            "/Tortas-El-Timmy/js/fontawesome.min.js",
-            "/Tortas-El-Timmy/js/jquery.min.js",
-            "/Tortas-El-Timmy/js/cookies.min.js",
-            "/Tortas-El-Timmy/images/menu.png",
-			"/Tortas-El-Timmy/images/error404.png",
-			"/Tortas-El-Timmy/404.html",
+            "/Tortas/css/bootstrap.min.css",
+            "/Tortas/css/fontawesome.min.css",
+            "/Tortas/js/bootstrap.bundle.min.js",
+            "/Tortas/js/fontawesome.min.js",
+            "/Tortas/js/jquery.min.js",
+            "/Tortas/js/cookies.min.js",
+            "/Tortas/images/menu.png",
+			"/Tortas/images/error404.png",
+			"/Tortas/404.html",
 		]);
 	});
 	e.waitUntil(Promise.all([cacheProm, cacheInm]));
@@ -57,9 +57,9 @@ self.addEventListener("fetch", (e) => {
 					.then((newRes) => {
 						if (!newRes) {
 							if (/\.(png|jpg|webp|jfif)$/.test(e.request.url)) {
-								return caches.match("/Tortas-El-Timmy/images/error404.png");
+								return caches.match("/Tortas/images/error404.png");
 							}
-							return caches.match("/Tortas-El-Timmy/404.html");
+							return caches.match("/Tortas/404.html");
 						}
 						return newRes;
 					});
@@ -82,9 +82,9 @@ self.addEventListener("fetch", (e) => {
 				.then((newRes) => {
 					if (!newRes) {
 						if (/\.(png|jpg|webp|jfif)$/.test(e.request.url)) {
-							return caches.match("/Tortas-El-Timmy/images/error404.png");
+							return caches.match("/Tortas/images/error404.png");
 						}
-						return caches.match("/Tortas-El-Timmy/404.html");
+						return caches.match("/Tortas/404.html");
 					}
 					return newRes;
 				});
