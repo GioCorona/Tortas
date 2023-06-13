@@ -1,0 +1,52 @@
+{
+	"short_name": "Timmy's",
+	"name": "Tortas El Timmy",
+    "start_url": "/Tortas-El-Timmy/index.html",
+	"icons": [
+		{
+			"src": "/Tortas-El-Timmy/images/icons/72x72.png",
+			"type": "image/png",
+			"sizes": "72x72"
+		},
+		{
+			"src": "/Tortas-El-Timmy/images/icons/96x96.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "/Tortas-El-Timmy/images/icons/128x128.png",
+			"type": "image/png",
+			"sizes": "128x128"
+		},
+        {
+			"src": "/Tortas-El-Timmy/images/icons/144x144.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+        {
+			"src": "/Tortas-El-Timmy/images/icons/152x152.png",
+			"type": "image/png",
+			"sizes": "152x152"
+		},{
+			"src": "/Tortas-El-Timmy/images/icons/192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},{
+			"src": "/Tortas-El-Timmy/images/icons/256x256.png",
+			"type": "image/png",
+			"sizes": "256x256"
+		},{
+			"src": "/Tortas-El-Timmy/images/icons/364x364.png",
+			"type": "image/png",
+			"sizes": "364x364"
+		},{
+			"src": "/Tortas-El-Timmy/images/icons/512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+    "background_color": "#fac3ea",
+    "theme_color": "#ffd1f2",
+    "display": "standalone",
+    "orientation": "portrait"
+}

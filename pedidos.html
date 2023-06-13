@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DAM">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tortas.css">
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+    <title>Tortas El Timmy</title>
+</head>
+
+<body>
+    <div class="tira"></div>
+    <h1 class="text-center text-danger mt-5 font">Tortas el Timmy</h1>
+    <!-- <h2><a href="/index.html">Clic aquí para regresar [es momentaneo]</a></h2> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <ul class="nav nav-tabs navbar-light">
+                    <li class="nav-item bg-sec-2">
+                        <a class="nav-link text-dark active" data-bs-toggle="tab" href="#tortas-page">Tortas</a>
+                    </li>
+                    <li class="nav-item bg-sec-2">
+                        <a class="nav-link text-dark" data-bs-toggle="tab" href="#refrescos-page">Refrescos</a>
+                    </li>
+                </ul>
+                <div class="tab-content p-3 bg-white" style="min-height: 350px;">
+                    <div id="tortas-page" class="tab-pane fade show active">
+                        <div class="accordion" id="tortas">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="fav-head">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#torta-fav" aria-expanded="false" aria-controls="torta-fav">
+                                        Las favoritas del pueblo
+                                    </button>
+                                </h2>
+                                <div id="torta-fav" class="accordion-collapse collapse show" aria-labelledby="fav-head"
+                                    data-bs-parent="#tortas">
+                                    <div class="accordion-body">
+                                        <form action="#" id="form-favorita">
+                                            <label for="torta-favorita" class="form-label">Tortas:</label>
+                                            <div id="select" class="h-100 bg-white">
+                                                <div id="torta-favorita" class="h-100 form-select"
+                                                    style="cursor: pointer;">
+                                                    <p class="m-0">Seleccione...</p>
+                                                </div>
+                                                <div id="opciones" class="bg-white">
+                                                    <div class="ps-3 py-2 border" style="cursor: pointer;">
+                                                        <p class="fw-bold m-0 mb-1">Mexicana</p>
+                                                        <p class="text-muted m-0">Chorizo, cebolla, huevo y quesillo
+                                                        </p>
+                                                    </div>
+                                                    <div class="ps-3 py-2 border" style="cursor: pointer;">
+                                                        <p class="fw-bold m-0 mb-1">Ninel Conde</p>
+                                                        <p class="text-muted m-0">Milanesa de pollo, jamón y
+                                                            quesillo
+                                                        </p>
+                                                    </div>
+                                                    <div class="ps-3 py-2 border" style="cursor: pointer;">
+                                                        <p class="fw-bold m-0 mb-1">Kalimba</p>
+                                                        <p class="text-muted m-0">Milanesa de res y quesillo
+                                                            enfrijolado
+                                                        </p>
+                                                    </div>
+                                                    <div class="ps-3 py-2 border" style="cursor: pointer;">
+                                                        <p class="fw-bold m-0 mb-1">Thalia</p>
+                                                        <p class="text-muted m-0">Milanesa de pollo, piña y quesillo</p>
+                                                    </div>
+                                                    <div class="ps-3 py-2 border" style="cursor: pointer;">
+                                                        <p class="fw-bold m-0 mb-1">Shakira</p>
+                                                        <p class="text-muted m-0">Sirloin, piña, huevo y quesillo
+                                                        </p>
+                                                    </div>
+                                                    <div class="ps-3 py-2 border" style="cursor: pointer;">
+                                                        <p class="fw-bold m-0 mb-1">Tesorito</p>
+                                                        <p class="text-muted m-0">Salchicha, jamón, chorizo y
+                                                            quesillo
+                                                        </p>
+                                                    </div>
+                                                    <div class="ps-3 py-2 border" style="cursor: pointer;">
+                                                        <p class="fw-bold m-0 mb-1">Hawaiana</p>
+                                                        <p class="text-muted m-0">Jamón, quesillo y piña</p>
+                                                    </div>
+                                                    <div class="ps-3 py-2 border" style="cursor: pointer;">
+                                                        <p class="fw-bold m-0 mb-1">Chabelo</p>
+                                                        <p class="text-muted m-0">Milanesa de pollo, salchicha y
+                                                            quesillo</p>
+                                                    </div>
+                                                    <div class="ps-3 py-2 border" style="cursor: pointer;">
+                                                        <p class="fw-bold m-0 mb-1">Trevi</p>
+                                                        <p class="text-muted m-0">Milanesa de res, pierna y quesillo</p>
+                                                    </div>
+                                                    <div class="ps-3 py-2 border" style="cursor: pointer;">
+                                                        <p class="fw-bold m-0 mb-1">Patrullero 777</p>
+                                                        <p class="text-muted m-0">Sirloin, huevo y quesillo</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-6">
+                                                    <label for="cantidad-torta-favorita"
+                                                        class="form-label">Cantidad</label>
+                                                    <input type="number" name="cantidad-torta-favorita"
+                                                        id="cantidad-torta-favorita" class="form-control" min="1"
+                                                        max="20" value="1">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="precio-torta-favorita" class="form-label">Precio</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">$</span>
+                                                        <input type="text" name="precio-torta-favorita"
+                                                            id="precio-torta-favorita" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-2">
+                                                    <label for="total-torta-favorita" class="form-label">Total</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">$</span>
+                                                        <input type="text" name="total-torta-favorita"
+                                                            id="total-torta-favorita" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-end mt-2">
+                                                <button type="submit" class="btn btn-outline-success btn-block"><i
+                                                        class="fa-regular fa-circle-plus"></i> Agregar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="arma-head">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#torta-arma" aria-expanded="false" aria-controls="torta-arma">
+                                        Arma tu torta
+                                    </button>
+
+                                </h2>
+                                <div id="torta-arma" class="accordion-collapse collapse" aria-labelledby="arma-head"
+                                    data-bs-parent="#tortas">
+                                    <div class="accordion-body">
+                                        <div class="container">
+                                            <div class="row g-2">
+                                                <div id="ingredientes" class="col-5">
+                                                    <h5>Ingredientes</h5>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;" onclick="añadir(this)"></i>Chorizo
+                                                    </div>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;" onclick="añadir(this)"></i>Cebolla
+                                                    </div>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;" onclick="añadir(this)"></i>Huevo
+                                                    </div>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;" onclick="añadir(this)"></i>Quesillo
+                                                    </div>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;" onclick="añadir(this)"></i>Milanesa
+                                                        de pollo
+                                                    </div>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;" onclick="añadir(this)"></i>Milanesa
+                                                        de res</div>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;" onclick="añadir(this)"></i>Jamón
+                                                    </div>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;"
+                                                            onclick="añadir(this)"></i>Salchicha</div>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;" onclick="añadir(this)"></i>Pierna
+                                                    </div>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;" onclick="añadir(this)"></i>Piña
+                                                    </div>
+                                                    <div class="p-1"><i
+                                                            class="fa-regular fa-circle-plus text-success me-2"
+                                                            style="cursor: pointer;" onclick="añadir(this)"></i>Sirloin
+                                                    </div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <form action="#" id="form-torta-nueva">
+                                                        <div class="p-3 border bg-ligh">
+                                                            <div class="col-12">
+                                                                <label for="cantidad-torta-nueva"
+                                                                    class="form-label">Cantidad</label>
+                                                                <input type="number" name="cantidad-torta-nueva"
+                                                                    id="cantidad-torta-nueva" class="form-control"
+                                                                    min="1" max="20" value="1">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <label for="ingrediente-1"
+                                                                    class="form-label">Ingrediente
+                                                                    1</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="ingrediente-1"
+                                                                        id="ingrediente-1" class="form-control"
+                                                                        readonly>
+                                                                    <span class="input-group-text"
+                                                                        style="cursor: pointer;"
+                                                                        onclick="eliminar(1)"><i
+                                                                            class="fa-regular fa-trash-can text-danger"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <label for="ingrediente-2"
+                                                                    class="form-label">Ingrediente
+                                                                    2</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="ingrediente-2"
+                                                                        id="ingrediente-2" class="form-control"
+                                                                        readonly>
+                                                                    <span class="input-group-text"
+                                                                        style="cursor: pointer;"
+                                                                        onclick="eliminar(2)"><i
+                                                                            class="fa-regular fa-trash-can text-danger"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <label for="ingrediente-3"
+                                                                    class="form-label">Ingrediente
+                                                                    3</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="ingrediente-3"
+                                                                        id="ingrediente-3" class="form-control"
+                                                                        readonly>
+                                                                    <span class="input-group-text"
+                                                                        style="cursor: pointer;"
+                                                                        onclick="eliminar(3)"><i
+                                                                            class="fa-regular fa-trash-can text-danger"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <span id="uno-mas" onclick="extra(this)"
+                                                                style="cursor: pointer;">
+                                                                <i
+                                                                    class="fa-solid fa-plus text-success me-2"></i>Ingrediente
+                                                                extra</span>
+                                                            <div id="ing-extra" class="col-12 d-none">
+                                                                <label for="ingrediente-4"
+                                                                    class="form-label">Ingrediente
+                                                                    4</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="ingrediente-4"
+                                                                        id="ingrediente-4" class="form-control"
+                                                                        readonly>
+                                                                    <span class="input-group-text"
+                                                                        style="cursor: pointer;"
+                                                                        onclick="eliminar(4)"><i
+                                                                            class="fa-regular fa-trash-can text-danger"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 text-end mt-2">
+                                                                <button type="submit"
+                                                                    class="btn btn-outline-success btn-block"><i
+                                                                        class="fa-regular fa-circle-plus"></i>
+                                                                    Agregar</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Aqui empiezan los chescos -->
+                    <div id="refrescos-page" class="tab-pane fade">
+                        <form action="" id="form-refrescos">
+                            <div class="form-group">
+                                <label for="refresco" class="form-label">Refresco</label>
+                                <select name="refresco" id="refresco" class="form-select">
+                                    <option>Seleccione...</option>
+                                    <option value="coca">Coca-Cola</option>
+                                    <option value="fanta">Fanta</option>
+                                    <option value="sangria">Sangría</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="tamaño" class="form-label">Tamaño</label>
+                                <select name="tamaño" id="tamaño" class="form-select" disabled>
+                                    <option>Seleccione...</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-3 col-6">
+                                    <label for="cantidad-refresco" class="form-label">Cantidad</label>
+                                    <input type="number" name="cantidad-refresco" id="cantidad-refresco"
+                                        class="form-control" min="1" max="20" step="1" value="1">
+                                </div>
+                                <div class="form-group mt-3 col-6">
+                                    <label for="precio" class="form-label">Precio</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">$</span>
+                                        <input type="text" name="precio-refresco" id="precio-refresco"
+                                            class="form-control" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <label for="total-refresco" class="form-label">Total</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input type="text" name="total-refresco" id="total-refresco" class="form-control"
+                                        readonly>
+                                </div>
+                            </div>
+
+                            <div class="text-end me-2 mt-3">
+                                <button type="submit" class="btn btn-outline-success btn-block"><i
+                                        class="fa-regular fa-circle-plus"></i>
+                                    Agregar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5">
+                <table class="table table-danger table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Total</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="pedidos-realizados">
+
+                    </tbody>
+                </table>
+                <button id="confirmar-pedido" type="button" class="btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#modalConfirmar" disabled>Confirmar pedido</button>
+            </div>
+        </div>
+        <!-- <button href="index.html" class="btn btn-danger">Regresar al inicio</button> -->
+    </div>
+    <div class="modal fade" id="modalConfirmar" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-label">Pedido...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Está seguro de que desea confirmar el pedido?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button id="modal-continuar" type="button" class="btn btn-success">Continuar</button>
+                    <button id="modal-confirmar" type="button" class="btn btn-success d-none">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/cookies.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/pedidos.js"></script>
+</body>
+
+</html>
