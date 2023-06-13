@@ -1,0 +1,29 @@
+.torta-favorita{
+	position: relative;
+}
+
+#opciones {
+	display: none;
+	max-height: 13.25rem;
+	overflow: auto;
+}
+
+#opciones.active {
+	display: block;
+	animation: fadeIn .3s forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		transform: translateY(-200px) scale(0.5);
+	}
+	to {
+		transform: translateY(0) scale(1);
+	}
+}
+
+#opciones div:hover{
+	background-color: #EDF8DD;
+	color: #6C942E;
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.13);
+}
